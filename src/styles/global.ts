@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .react-modal-overlay {
-        background: rgba(255, 255, 255, .5);
+        background: rgba(0, 0, 0, .5);
 
         position: fixed;
         top: 0;
@@ -72,5 +72,19 @@ export const GlobalStyle = createGlobalStyle`
         padding: 3rem;
         position: relative;
         border-radius: .25rem;
+    }
+
+    .react-modal-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        border: 0;
+        background: transparent;
+
+        transition: filter .2s;
+
+        &:hover {
+            filter: brightness(.8);
+        }
     }
 `
